@@ -92,17 +92,23 @@
     text-align:center; padding-top:40vh;
   }
 
-  /* ---- banda de foco: fija en viewport, el texto pasa por dentro ---- */
-  #focus{
-    position:fixed; left:0; right:0; top:28vh;
-    height:calc(var(--fs) * 4.95);   /* 3 líneas × line-height 1.65 */
-    pointer-events:none; z-index:1;
-    background:linear-gradient(to bottom,
-      rgba(143,166,118,0) 0%,
-      rgba(143,166,118,.20) 16%,
-      rgba(143,166,118,.20) 84%,
-      rgba(143,166,118,0) 100%);
+  /* ---- focus dinámico: marcadores sobre líneas reales ---- */
+  #focus-overlay{
+    position:fixed; inset:0; pointer-events:none; z-index:1;
   }
+  .marker{
+    position:absolute; border-radius:2px;
+    background:rgba(143,166,118,.42);   /* marcador musgo, estilo resaltador */
+    will-change:transform;
+  }
+  #focusbtn{
+    font-family:var(--mono); font-size:11px; letter-spacing:.08em;
+    min-width:110px; min-height:44px; padding:8px 14px;
+    border:1px solid var(--line); border-radius:2px;
+    background:#f2f0ea; color:var(--ink-dim); cursor:pointer;
+    touch-action:manipulation;
+  }
+  #focusbtn.on{border-color:var(--accent); color:var(--accent)}
   @media (max-width:900px){
     #texto{width:88%; margin-left:6%}
   }
@@ -114,12 +120,13 @@
     <div id="clock">--:--</div>
     <div id="timer">15:00</div>
     <div id="timer-hint">tap inicia/pausa · mantener resetea</div>
+    <button id="focusbtn" class="on" aria-pressed="true">focus ●</button>
   </div>
   <div id="fontctl">
     <button id="f-menos" aria-label="Texto más pequeño">A−</button>
     <button id="f-mas" aria-label="Texto más grande">A+</button>
   </div>
-  <div id="focus" aria-hidden="true"></div>
+  <div id="focus-overlay" aria-hidden="true"></div>
   <main id="texto"><div id="estado">cargando ponencia.md…</div></main>
 
 <script>
@@ -263,10 +270,97 @@ function setFS(v){
   fs = Math.min(24, Math.max(12, v));
   document.documentElement.style.setProperty('--fs', fs + 'px');
   try{ localStorage.setItem('ponencia_fs', String(fs)); }catch(e){}
+  schedFocus();
 }
 setFS(fs);
 $('f-mas').addEventListener('click', function(){ setFS(fs+1); });
 $('f-menos').addEventListener('click', function(){ setFS(fs-1); });
+
+/* ===== focus dinámico (núcleo verificado en Node con 12 aserciones) ===== */
+function mergeLineRects(rects, tol){
+  var lines = [];
+  for (var i = 0; i < rects.length; i++){
+    var r = rects[i];
+    if (r.right - r.left <= 0 || r.bottom - r.top <= 0) continue;
+    var cy = (r.top + r.bottom) / 2, line = null;
+    for (var j = 0; j < lines.length; j++){
+      if (Math.abs(lines[j].cy - cy) <= tol){ line = lines[j]; break; }
+    }
+    if (!line){
+      lines.push({ top:r.top, bottom:r.bottom, left:r.left, right:r.right, cy:cy });
+    } else {
+      line.top = Math.min(line.top, r.top);
+      line.bottom = Math.max(line.bottom, r.bottom);
+      line.left = Math.min(line.left, r.left);
+      line.right = Math.max(line.right, r.right);
+      line.cy = (line.top + line.bottom) / 2;
+    }
+  }
+  return lines.sort(function(a,b){ return a.top - b.top; });
+}
+function linesInZone(lines, zTop, zBottom){
+  return lines.filter(function(L){
+    var c = (L.top + L.bottom)/2; return c >= zTop && c <= zBottom;
+  });
+}
+
+var overlay = $('focus-overlay'), btnFocus = $('focusbtn');
+var focusOn = true;
+try{ focusOn = localStorage.getItem('ponencia_focus') !== '0'; }catch(e){}
+
+function paintFocus(){
+  if (!focusOn){ overlay.textContent = ''; return; }
+  var zTop = window.innerHeight * 0.28;
+  var zBottom = zTop + fs * 1.65 * 3;            // zona de 3 líneas
+  var blocks = $('texto').querySelectorAll('p,h1,h2,h3,li,blockquote');
+  var rects = [];
+  for (var i = 0; i < blocks.length; i++){
+    var br = blocks[i].getBoundingClientRect();
+    if (br.bottom < zTop) continue;
+    if (br.top > zBottom) break;                 // orden de documento: ya no hay más
+    var range = document.createRange();
+    range.selectNodeContents(blocks[i]);
+    var frs = range.getClientRects();
+    for (var k = 0; k < frs.length; k++) rects.push(frs[k]);
+  }
+  var lines = linesInZone(mergeLineRects(rects, fs * 0.6), zTop, zBottom);
+  // pool de marcadores: reusar nodos, crear solo los que falten
+  while (overlay.children.length < lines.length){
+    var m = document.createElement('div'); m.className = 'marker';
+    overlay.appendChild(m);
+  }
+  while (overlay.children.length > lines.length){
+    overlay.removeChild(overlay.lastChild);
+  }
+  var pad = 4;
+  for (var n = 0; n < lines.length; n++){
+    var L = lines[n], el = overlay.children[n];
+    el.style.top = (L.top - 1) + 'px';
+    el.style.left = (L.left - pad) + 'px';
+    el.style.width = (L.right - L.left + pad*2) + 'px';
+    el.style.height = (L.bottom - L.top + 2) + 'px';
+  }
+}
+// scroll/resize -> un solo repintado por frame
+var rafPend = false;
+function schedFocus(){
+  if (rafPend) return; rafPend = true;
+  requestAnimationFrame(function(){ rafPend = false; paintFocus(); });
+}
+window.addEventListener('scroll', schedFocus, { passive:true });
+window.addEventListener('resize', schedFocus);
+
+function setFocusBtn(){
+  btnFocus.classList.toggle('on', focusOn);
+  btnFocus.setAttribute('aria-pressed', focusOn ? 'true' : 'false');
+  btnFocus.textContent = focusOn ? 'focus ●' : 'focus ○';
+}
+btnFocus.addEventListener('click', function(){
+  focusOn = !focusOn;
+  try{ localStorage.setItem('ponencia_focus', focusOn ? '1' : '0'); }catch(e){}
+  setFocusBtn(); paintFocus();
+});
+setFocusBtn();
 
 /* ===== wake lock: la pantalla no duerme mientras lees ===== */
 var lock = null;
@@ -290,6 +384,7 @@ function cargar(){
     .then(function(md){
       el.innerHTML = marked.parse(md);
       document.title = (el.querySelector('h1') || {textContent:'Ponencia'}).textContent;
+      schedFocus();
     })
     .catch(function(err){
       el.innerHTML = '<div id="estado">no se pudo cargar ponencia.md — ' + String(err.message || err) +
