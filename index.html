@@ -119,6 +119,13 @@
     padding:4px 10px; background:var(--chip); text-align:center;
   }
   #dnow b{color:var(--accent); font-weight:700; font-variant-numeric:tabular-nums}
+  #wnow{
+    font-family:var(--mono); font-size:13px; letter-spacing:.06em;
+    color:var(--ink-dim); border:1px solid var(--line); border-radius:2px;
+    padding:4px 10px; background:var(--chip); text-align:center;
+    font-variant-numeric:tabular-nums; white-space:nowrap;
+  }
+  #wnow b{color:var(--accent); font-weight:700}
 
   /* ---- focus dinámico: una línea en negrita óptica, el resto atenuado ---- */
   #focus-overlay{
@@ -210,6 +217,7 @@
     <div id="timer">15:00</div>
     <div id="timer-hint">tap inicia/pausa · mantener resetea</div>
     <div id="dnow">diapo <b>–</b></div>
+    <div id="wnow"><b>0</b> / 0 palabras</div>
     <button id="focusbtn" class="on" aria-pressed="true">focus ●</button>
     <button id="themebtn" aria-pressed="false">◐ oscuro</button>
     <button id="qabtn" aria-pressed="false">Q&amp;A →</button>
@@ -463,7 +471,7 @@ function paintFocus(){
 var rafPend = false;
 function schedFocus(){
   if (rafPend) return; rafPend = true;
-  requestAnimationFrame(function(){ rafPend = false; paintFocus(); paintProgress(); paintDiapo(); });
+  requestAnimationFrame(function(){ rafPend = false; paintFocus(); paintProgress(); paintDiapo(); paintWords(); });
 }
 window.addEventListener('scroll', schedFocus, { passive:true });
 window.addEventListener('resize', schedFocus);
@@ -484,6 +492,47 @@ function paintProgress(){
   var top = first.getBoundingClientRect().top + y;
   var bottom = last.getBoundingClientRect().bottom + y;
   elRailFill.style.height = progressPct(y + axis, top, bottom) + '%';
+}
+
+/* ===== contador de palabras: total del documento y leídas según el eje de foco ===== */
+var elWnow = $('wnow');
+var wIndex = [];   /* [{el, w}] por bloque de primer nivel */
+var wTotal = 0;
+
+function cuentaPalabras(s){
+  s = (s || '').trim();
+  return s ? s.split(/\s+/).length : 0;
+}
+function buildWordIndex(){
+  wIndex = []; wTotal = 0;
+  var blocks = document.querySelectorAll('#texto > *');
+  for (var i = 0; i < blocks.length; i++){
+    var b = blocks[i];
+    var w = cuentaPalabras(b.textContent);
+    /* las insignias de diapositiva no cuentan como palabras */
+    var ds = b.querySelectorAll('.diapo');
+    for (var j = 0; j < ds.length; j++) w -= cuentaPalabras(ds[j].textContent);
+    if (w < 0) w = 0;
+    wIndex.push({ el: b, w: w });
+    wTotal += w;
+  }
+}
+function paintWords(){
+  if (!elWnow) return;
+  if (!wIndex.length){ elWnow.style.display = 'none'; return; }
+  elWnow.style.display = '';
+  var axis = window.innerHeight * 0.28 + (fs * 1.65) / 2;
+  var leidas = 0;
+  for (var i = 0; i < wIndex.length; i++){
+    var r = wIndex[i].el.getBoundingClientRect();
+    if (r.bottom <= axis){ leidas += wIndex[i].w; }
+    else if (r.top < axis && r.height > 0){
+      leidas += Math.round(wIndex[i].w * (axis - r.top) / r.height);
+      break;
+    } else { break; }
+  }
+  if (leidas > wTotal) leidas = wTotal;
+  elWnow.innerHTML = '<b>' + leidas + '</b> / ' + wTotal + ' palabras';
 }
 
 /* ===== indicador de diapositiva: la última marca que cruzó el eje de foco ===== */
@@ -559,6 +608,7 @@ function cargar(doc, despues){
                       '<span class="diapo">$1</span>');
       el.innerHTML = marked.parse(md);
       document.title = (el.querySelector('h1') || {textContent:'Ponencia'}).textContent;
+      buildWordIndex();
       schedFocus();
       if (despues) despues();
     })
