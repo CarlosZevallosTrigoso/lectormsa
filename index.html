@@ -96,6 +96,27 @@
     text-align:center; padding-top:8vh;
   }
 
+  /* ---- diapositivas: marcas [[Dn]] al margen izquierdo ---- */
+  #texto p, #texto h1, #texto h2, #texto h3, #texto blockquote{position:relative}
+  .diapo{
+    position:absolute; left:-3.8em;
+    font-family:var(--mono); font-size:11px; line-height:1.7;
+    color:var(--accent); border:1px solid var(--accent);
+    border-radius:3px; padding:0 5px;
+    user-select:none; -webkit-user-select:none; opacity:.9;
+    font-variant-numeric:tabular-nums; white-space:nowrap;
+  }
+  .diapo.past{background:var(--accent); color:var(--bg)}
+  @media (max-width:700px){
+    .diapo{position:static; display:inline-block; margin-right:.5em; vertical-align:.12em}
+  }
+  #dnow{
+    font-family:var(--mono); font-size:13px; letter-spacing:.06em;
+    color:var(--ink-dim); border:1px solid var(--line); border-radius:2px;
+    padding:4px 10px; background:var(--chip); text-align:center;
+  }
+  #dnow b{color:var(--accent); font-weight:700; font-variant-numeric:tabular-nums}
+
   /* ---- focus dinámico: una línea en negrita óptica, el resto atenuado ---- */
   #focus-overlay{
     position:fixed; inset:0; pointer-events:none; z-index:1;
@@ -117,20 +138,47 @@
     touch-action:manipulation;
   }
   #focusbtn.on{border-color:var(--accent); color:var(--accent)}
+  #themebtn{
+    font-family:var(--mono); font-size:11px; letter-spacing:.08em;
+    min-width:110px; min-height:44px; padding:8px 14px;
+    border:1px solid var(--line); border-radius:2px;
+    background:var(--chip); color:var(--ink-dim); cursor:pointer;
+    touch-action:manipulation;
+  }
+  #themebtn:active{border-color:var(--accent); color:var(--accent)}
 
-  /* ---- progreso de lectura: riel vertical, borde derecho ---- */
+  /* ---- tema oscuro (invertir): carbón + hueso, paleta czt ---- */
+  body.dark{
+    --bg:#16170f; --ink:#d8d6c4; --ink-dim:#8a8c78;
+    --line:#33352a; --chip:#1f2017; --accent:#8fa676;
+  }
+  body.dark.dim #texto{ color:#84836f; }             /* atenuado: hueso apagado */
+  body.dark ::highlight(foco){
+    color:#f0eedb;                                    /* línea activa: hueso pleno */
+    text-shadow: 0.45px 0 0 #f0eedb, -0.45px 0 0 #f0eedb;
+  }
+  body.dark #texto blockquote{ color:#b7b5a2; }
+  body.dark #rail{ background:rgba(255,255,255,.06); }
+  body.dark #rail-fill{ background:rgba(143,166,118,.42); }
+  body.dark #rail .tick{ background:rgba(255,255,255,.16); }
+  body.dark #timer.done{ color:#16170f; }
+
+  /* ---- progreso de lectura: riel atenuado junto a la columna ---- */
   #rail{
-    position:fixed; top:0; right:0; bottom:0; width:8px; z-index:5;
-    background:rgba(0,0,0,.08);
-    border-left:1px solid rgba(0,0,0,.10);
+    position:fixed; top:0; bottom:0; width:4px; z-index:5;
+    left:calc(6% + 68% + 16px);      /* flanco derecho de la columna + respiro */
+    background:rgba(0,0,0,.05);
   }
   #rail-fill{
     position:absolute; top:0; left:0; right:0; height:0%;
-    background:var(--accent);
+    background:rgba(88,106,69,.38);  /* musgo atenuado */
   }
   #rail .tick{
     position:absolute; left:0; right:0; height:2px;
-    background:rgba(0,0,0,.28);
+    background:rgba(0,0,0,.14);
+  }
+  @media (max-width:900px){
+    #rail{ left:calc(6% + 88% + 8px); }
   }
   @media (max-width:900px){
     #texto{width:88%; margin-left:6%}
@@ -149,7 +197,9 @@
     <div id="clock">--:--</div>
     <div id="timer">15:00</div>
     <div id="timer-hint">tap inicia/pausa · mantener resetea</div>
+    <div id="dnow">diapo <b>–</b></div>
     <button id="focusbtn" class="on" aria-pressed="true">focus ●</button>
+    <button id="themebtn" aria-pressed="false">◐ oscuro</button>
   </div>
   <div id="fontctl">
     <button id="f-menos" aria-label="Texto más pequeño">A−</button>
@@ -400,7 +450,7 @@ function paintFocus(){
 var rafPend = false;
 function schedFocus(){
   if (rafPend) return; rafPend = true;
-  requestAnimationFrame(function(){ rafPend = false; paintFocus(); paintProgress(); });
+  requestAnimationFrame(function(){ rafPend = false; paintFocus(); paintProgress(); paintDiapo(); });
 }
 window.addEventListener('scroll', schedFocus, { passive:true });
 window.addEventListener('resize', schedFocus);
@@ -423,6 +473,23 @@ function paintProgress(){
   elRailFill.style.height = progressPct(y + axis, top, bottom) + '%';
 }
 
+/* ===== indicador de diapositiva: la última marca que cruzó el eje de foco ===== */
+var elDnow = $('dnow');
+function paintDiapo(){
+  if (!elDnow) return;
+  var ms = document.querySelectorAll('#texto .diapo');
+  if (!ms.length){ elDnow.style.display = 'none'; return; }
+  elDnow.style.display = '';
+  var axis = window.innerHeight * 0.28 + (fs * 1.65) / 2;
+  var cur = null;
+  for (var i = 0; i < ms.length; i++){
+    var r = ms[i].getBoundingClientRect();
+    if (r.top <= axis){ ms[i].classList.add('past'); cur = ms[i]; }
+    else { ms[i].classList.remove('past'); }
+  }
+  elDnow.innerHTML = 'diapo <b>' + (cur ? cur.textContent : '–') + '</b>';
+}
+
 function setFocusBtn(){
   btnFocus.classList.toggle('on', focusOn);
   btnFocus.setAttribute('aria-pressed', focusOn ? 'true' : 'false');
@@ -435,6 +502,22 @@ btnFocus.addEventListener('click', function(){
   setFocusBtn(); paintFocus();
 });
 setFocusBtn();
+
+/* ===== tema claro/oscuro persistido ===== */
+var btnTheme = $('themebtn');
+var darkOn = false;
+try{ darkOn = localStorage.getItem('ponencia_tema') === 'oscuro'; }catch(e){}
+function setTheme(){
+  document.body.classList.toggle('dark', darkOn);
+  btnTheme.textContent = darkOn ? '◐ claro' : '◐ oscuro';   // muestra el destino
+  btnTheme.setAttribute('aria-pressed', darkOn ? 'true' : 'false');
+}
+btnTheme.addEventListener('click', function(){
+  darkOn = !darkOn;
+  try{ localStorage.setItem('ponencia_tema', darkOn ? 'oscuro' : 'claro'); }catch(e){}
+  setTheme();
+});
+setTheme();
 
 /* ===== wake lock: la pantalla no duerme mientras lees ===== */
 var lock = null;
@@ -456,6 +539,8 @@ function cargar(){
       return r.text();
     })
     .then(function(md){
+      md = md.replace(/\[\[\s*D?\s*([0-9]+(?:[\u2013-][0-9]+)?[A-Za-z]?)\s*\]\]/g,
+                      '<span class="diapo">$1</span>');
       el.innerHTML = marked.parse(md);
       document.title = (el.querySelector('h1') || {textContent:'Ponencia'}).textContent;
       schedFocus();

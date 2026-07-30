@@ -1,4 +1,4 @@
-# **Arte contemporáneo, subjetividades críticas y conocimiento venenoso en la producción visual sobre el conflicto armado en el Perú post-conflicto**
+# [[D1]] **Arte contemporáneo, subjetividades críticas y conocimiento venenoso en la producción visual sobre el conflicto armado en el Perú post-conflicto**
 
 Carlos Zevallos Trigoso
 
@@ -14,7 +14,7 @@ Abordaré esta pregunta a partir del trabajo del artista visual peruano Isaac Er
 
 II
 
-¿Quién es Isaac Ernesto? Esta pregunta no admite una respuesta definitiva, y esa inestabilidad es constitutiva: quién es Isaac Ernesto depende, en cada instancia, de sus propios enunciados. 
+[[D2]] ¿Quién es Isaac Ernesto? Esta pregunta no admite una respuesta definitiva, y esa inestabilidad es constitutiva: quién es Isaac Ernesto depende, en cada instancia, de sus propios enunciados. 
 
 En su página web, donde figura su portafolio, Isaac Ernesto se presenta como un artista visual egresado de la Escuela Nacional Superior Autónoma de Bellas Artes del Perú, nacido en Huancayo o Lima en 1992\. Ha sido finalista en cuatro ocasiones del Premio ICPNA de Arte Contemporáneo, primer premio del Premio Nacional de Artes Visuales del año 2018 y además ganador del Premio del concurso nacional Pasaporte Para un Artista del año 2022 (obra de la que hablaré precisamente).
 
@@ -24,45 +24,45 @@ Isaac Ernesto, además, se presenta a sí mismo desde la posición de lo abyecto
 
 Su práctica se sostiene en la autobiografía y no desde la lógica del testimonio: modalidad que suele tensionar en tanto percibe que el aparato de memoria peruano la administra y valida; la autobiografía, en cambio, reclama una agencia sobre el propio relato que ninguna comisión ha autorizado. Lejos de acogerse a la «inmunidad» del testigo, Isaac exhibe su condición construida mediante una estética del borramiento, de marcas tachadas y enunciados paradójicos.
 
-II.1
+[[D3]] II.1
 
-El año dos mil veintidós, el concurso Pasaporte para un Artista celebraba su vigesimoquinta edición con el concepto «amor» como eje temático. El proyecto que Isaac presentó respondió interpelando la coherencia estructural de dicha temática:
+[[D4]] El año dos mil veintidós, el concurso Pasaporte para un Artista celebraba su vigesimoquinta edición con el concepto «amor» como eje temático. El proyecto que Isaac presentó respondió interpelando la coherencia estructural de dicha temática:
 
 ¿Quién puede amar y a quién? 
 
-Su texto de artista preguntaba, sin rodeos: ¿quiénes podemos amar «lo espurio»?, ¿qué cuerpos decidimos expulsar de los límites simbólicos de lo que llamamos nación?, entre otras preguntas.
+[[D5]] Su texto de artista preguntaba, sin rodeos: ¿quiénes podemos amar «lo espurio»?, ¿qué cuerpos decidimos expulsar de los límites simbólicos de lo que llamamos nación?, entre otras preguntas.
 
-En un sótano de la Alianza Francesa, una ficha bibliográfica recibía a los visitantes con una sola entrada, tomada de un diccionario del año en que nació el artista: 
+[[D6]] En un sótano de la Alianza Francesa, una ficha bibliográfica recibía a los visitantes con una sola entrada, tomada de un diccionario del año en que nació el artista: 
 
 «Indeseable: dícese de la persona cuya permanencia en un país consideran peligrosa para la tranquilidad pública las autoridades de éste». 
 
-La instalación desplegaba, en tres capítulos, un interludio y un epílogo, un relato auto-documental: fotografías truncas tomadas del archivo familiar, cartas cargadas de afectos, comunicados públicos firmados por el MRTA, entrevistas grabadas a sus madres que relatan su «adopción», entre otros materiales.
+[[D7]] La instalación desplegaba, en tres capítulos, un interludio y un epílogo, un relato auto-documental: fotografías truncas tomadas del archivo familiar, cartas cargadas de afectos, comunicados públicos firmados por el MRTA, [[D8]] entrevistas grabadas a sus madres que relatan su «adopción», entre otros materiales.
 
 Esta instalación recibió el primer premio, arropada, me permito especular, por un marco cuasi-diplomático proporcionado por la Alianza Francesa.
 
-II. 2
+[[D9]] II. 2
 
-Entre fines de dos mil veinticinco y junio de este año emprendimos juntos el remontaje de la instalación en un espacio independiente de Barranco, bajo mi curaduría, como experimento metodológico para mi investigación. 
+Entre fines de dos mil veinticinco y junio de este año emprendimos juntos el remontaje de la instalación en un espacio independiente de Barranco, bajo mi curaduría, [[D10]] como experimento metodológico para mi investigación. 
 
-En las semanas previas al montaje, sin embargo, fue convocado en calidad de testigo en una investigación preparatoria de la Dirección Contra el Terrorismo (DIRCOTE), a raíz de su participación como ilustrador en la reedición de un libro de Víctor Polay. 
+[[D11]] En las semanas previas al montaje, sin embargo, fue convocado en calidad de testigo en una investigación preparatoria de la Dirección Contra el Terrorismo (DIRCOTE), [[D12]] a raíz de su participación como ilustrador en la reedición de un libro de Víctor Polay. 
 
-A esta instancia fue convocado, digamos, como un cuasi-sospechoso de apología al terrorismo. 
+[[D13]] A esta instancia fue convocado, digamos, como un cuasi-sospechoso de apología al terrorismo. 
 
-A su vez, días antes de la inauguración de la exposición, la segunda vuelta electoral volvía inevitable el retorno del fujimorismo al poder ejecutivo. 
+[[D14]] A su vez, días antes de la inauguración de la exposición, la segunda vuelta electoral volvía inevitable el retorno del fujimorismo al poder ejecutivo. 
 
-El proyecto viró entonces hacia una versión más opaca y silenciosa. Como si el «shhh» del título se hubiera hecho más intenso, y el «permiso para vivir», más sutil. 
+[[D15]] El proyecto viró entonces hacia una versión más opaca y silenciosa. [[D16]] Como si el «shhh» del título se hubiera hecho más intenso, y el «permiso para vivir», más sutil. 
 
-Esa opacidad tiene una materialidad precisa. Los comunicados del MRTA aparecen mecanografiados sin tinta sobre papel negro: la máquina golpeó el papel, la huella existe pero la lectura está obstruida. Las cartas familiares se exhiben tachadas casi por completo, y lo que sobrevive a la tachadura son, casi siempre, fórmulas de cuidado.
+[[D17]] Esa opacidad tiene una materialidad precisa. [[D18]] Los comunicados del MRTA aparecen mecanografiados sin tinta sobre papel negro: la máquina golpeó el papel, la huella existe pero la lectura está obstruida. [[D19]] Las cartas familiares se exhiben tachadas casi por completo, y lo que sobrevive a la tachadura son, casi siempre, fórmulas de cuidado.
 
-A continuación propongo tres tesis sobre lo que esto me permite reflexionar:
+[[D20–24]] A continuación propongo tres tesis sobre lo que esto me permite reflexionar:
 
-TESIS 1
+[[D25]] TESIS 1
 
 El régimen de memoria del posconflicto peruano opera desde una lógica indexical: las posiciones que distribuye (víctima, perpetrador, héroe, hijo-de) no califican actos sino contigüidades, de modo que la culpa y la legitimidad se transmiten a la manera de la «pureza de sangre», una lógica que tiene como estructura fundante la racialización. Su semiótica es la de la purificación: toda performance ciudadana exige acreditar, antes que nada, la pureza propia.
 
-En la semiótica de Charles Sanders Peirce, el índice articula el signo con su objeto por contigüidad, por conexión real: el signo no se parece a aquello que indexa ni lo nombra por convención (como el símbolo): lo toca. La palabra «terruco» funciona exactamente así: no describe una creencia ni un acto, marca un haber-estado-cerca que basta para incriminar. Y hemos naturalizado el tránsito de «terrorismo» a «terrorista», del tipo de acción al tipo de sujeto; esa sustancialización vuelve la culpa heredable por filiación y cercanía.
+[[D26]] En la semiótica de Charles Sanders Peirce, el índice articula el signo con su objeto por contigüidad, por conexión real: el signo no se parece a aquello que indexa ni lo nombra por convención (como el símbolo): lo toca. La palabra «terruco» funciona exactamente así: no describe una creencia ni un acto, marca un haber-estado-cerca que basta para incriminar. Y hemos naturalizado el tránsito de «terrorismo» a «terrorista», del tipo de acción al tipo de sujeto; esa sustancialización vuelve la culpa heredable por filiación y cercanía.
 
-Cuando en contextos de movilización se dice: «somos estudiantes, no somos terroristas», se actúa en correspondencia con la lógica de este régimen.
+[[D27]] Cuando en contextos de movilización se dice: «somos estudiantes, no somos terroristas», se actúa en correspondencia con la lógica de este régimen.
 
 No decimos «no hicimos nada»; decimos «no somos». 
 
@@ -72,7 +72,7 @@ El arte de la memoria participa de esa gramática por otra vía: la exigencia de
 
 Duelo y desmarque realizan la misma operación en registros distintos: para ser llorado públicamente, como para marchar públicamente, hay que acreditar cierta limpieza primero. Y la regla no parece ser solamente peruana: en su libro *Queering Acts of Mourning*, subtitulado *Las performances de la sangre*, Cecilia Sosa mostró que en la Argentina posdictatorial operó durante más de tres décadas una regla cultural tácita según la cual solo quienes fueron directamente afectados por la represión militar estaban autorizados a asumir el derecho de recordar: una «familia herida», consanguínea, que comandó la experiencia del duelo. 
 
-TESIS 2
+[[D28]] TESIS 2
 
 El amor hacia aquello que la nación ha marcado como espurio constituye, en el sentido que Veena Das da al término, un conocimiento venenoso: un saber heredado que se incorpora a las relaciones y que ninguna consagración institucional desintoxica. Declarar públicamente ese amor, sin aclarar los hechos ni acreditar inocencia, configura una forma de decir veraz que asume el riesgo en el sentido preciso de una parresía.
 
@@ -84,7 +84,7 @@ En el caso de Isaac Ernesto, identifico un desplazamiento hacia una segunda gene
 
 La parresía, tal como Michel Foucault la recuperó, exige un decir franco cuya verdad expone a quien lo pronuncia ante un peligro. Isaac parecería incumplir la franqueza: su trabajo es opaco. Pero cumple la exposición al riesgo de manera literal, con citación policial incluida. Su decir veraz no está en aclarar los hechos: está en no retirar el amor.
 
-TESIS 3
+[[D29]] TESIS 3
 
 La obra “SHHH (permiso para vivir)” realiza una operación que propongo llamar contra-indexical: conserva los documentos y las conexiones reales que estos establecen, pero suspende la operación que convierte el índice en veredicto. Sus tachaduras sostienen la relación en cuanto relación. En esa misma operación, el archivo deja de administrar un pasado y funciona, siguiendo a Appadurai, como una aspiración: la anticipación de una memoria que todavía no tiene lugar.
 
@@ -92,7 +92,7 @@ La operación no es negar: las cartas, los comunicados, las fotografías siguen 
 
 Édouard Glissant reclamó para esto el derecho a la opacidad, que no es alienación impenetrable sino subsistencia en una singularidad irreductible; es imposible, nos dice, reducir a nadie a una verdad que no haya generado por sí mismo. Y esta suspensión tiene, además, una política del tiempo: si toda documentación es intervención, como propone Appadurai, la estética de expediente de esta obra no administra un pasado: anticipa una memoria que todavía no tiene lugar.
 
-Coda
+[[D30]] Coda
 
 El mandato crítico espera que el artista nombre su crisis con claridad y se posicione: esto sí, esto no. La ambivalencia le resulta indigesta. Y sin embargo el campo premió esta obra, la hizo circular, le otorgó un reconocimiento real aunque precario, con la sospecha intacta como condición de fondo. 
 
