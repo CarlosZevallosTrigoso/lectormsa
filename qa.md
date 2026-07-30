@@ -1,83 +1,63 @@
-# Q&A — notas a la mano
+# Q&A — anotaciones teóricas
 
-*(hoja de apoyo; el botón «← ponencia» regresa al guion)*
+*(hoja de estudio para la ronda; el botón «← ponencia» regresa al guion)*
 
-## Respuestas preparadas
+## 1. Contra el paradigma del trauma (dónde se para esta ponencia)
 
-**«¿Pero es verdad? ¿Es realmente hijo de...?»**
-Lo que puedo afirmar como investigador es lo que la obra enuncia. Su anclaje referencial es precisamente lo que la obra mantiene en suspenso, y ese suspenso es el objeto de mi análisis, no su obstáculo.
+Los estudios de memoria se constituyeron, en buena medida, sobre el paradigma del trauma: la transmisión intergeneracional pensada como herida psíquica, exceso no simbolizable que retorna (Caruth, *Unclaimed Experience*, 1996; Felman y Laub; LaCapra y su par *acting out* / *working through*). La crítica interna existe hace tiempo: Kansteiner advirtió que la metáfora traumática, trasladada de la clínica a la cultura, colapsa la distinción entre víctimas, perpetradores y espectadores y estetiza el sufrimiento; y Rigney ha diagnosticado la hegemonía del trauma como un sesgo que deja al campo sin herramientas para pensar la esperanza, la protesta o el futuro. Mi apuesta se inscribe en ese margen crítico, pero con una herramienta distinta: el «conocimiento venenoso» de Das no es una subespecie del trauma sino su alternativa categorial. El trauma es una herida (le pasó al sujeto, lo desborda, pide elaboración, su gramática es psicoanalítica y su horizonte la simbolización); el veneno es un saber (el sujeto lo sabe, se incorpora a los vínculos, se administra: se contiene, se calla, se dosifica, se hereda; su gramática es epistémica y relacional, y no tiene horizonte de cura). Das lo dice con todas sus letras: el pasado entra al presente no necesariamente como memoria traumática sino como conocimiento venenoso. Lo que Isaac administra mediante mostrar y ocultar es exactamente lo que se hace con un conocimiento, no lo que se hace con un trauma. Si me preguntan por qué no hablo de trauma: porque la categoría describiría mal la operación material de la obra, que no simboliza una herida sino que dosifica un saber.
 
-**«¿No relativizas la violencia de Sendero y el MRTA?»**
-La crítica se dirige al régimen que distribuye legitimidad por filiación, no a la condena de la violencia, que permanece íntegra. No imputo intenciones a nadie: describo una gramática que opera a través de todos (también de las prácticas críticas, también de esta ponencia) sin que nadie la emita.
+## 2. Posmemoria: el doble límite
 
-**«¿Esto no es más bien dicentización que indexicalidad?»**
-Exacto: la formulación técnica es que el régimen dicentiza la filiación (lee la contigüidad como signo asertivo de culpa) y la obra de-dicentiza sin des-indexicalizar: conserva la conexión, sustrae la aseveración. Christopher Ball, «On Dicentization», *JLA* 24(2), 2014; conversa de la rematización de Susan Gal. En la ponencia uso «indexical» como término de superficie por economía expositiva.
+La posmemoria (Hirsch, 2012) es el marco por defecto de la MSA para segundas generaciones, y mi caso la desborda por partida doble. Límite de posición: Hirsch la formuló desde los descendientes de víctimas; presupone una herencia legítima del dolor, socialmente autorizada e incluso demandada (custodiar, reconstruir, imaginar). El propio Rothberg anota que el concepto no se usa para descendientes de perpetradores: la limitación está reconocida desde dentro del campo. Isaac hereda una posición que el régimen marca como espuria: su trabajo de archivo no está autorizado sino bajo sospecha; no custodia una herencia doliente, administra una herencia acusatoria. Límite de paradigma: la posmemoria es una categoría del paradigma del trauma (nota 1), de modo que falla ante Isaac por las dos vías a la vez. Y la convergencia no es casual: la teoría dominante de la segunda generación solo tiene casilla para herencias legítimas y traumáticas, es decir, reproduce la gramática del régimen que estudia. La pregunta erudita por Hirsch confirma la tesis uno.
 
-**«En Argentina eso está cambiando» / caso argentino**
-Sosa misma registra el desplazamiento reciente de la «familia herida» hacia una copropiedad colectiva del trauma; ese desplazamiento confirma la regla que lo precedió. Contraste de fondo: la segunda generación argentina desacraliza desde dentro de un estatuto victimal disponible (Carri, *Los rubios*; Perez, *Diario de una princesa montonera*; Blejmar sobre autoficción); Isaac habla desde donde nunca hubo altar. Y dentro de HIJOS circulaba, con humor, el «pedigrí» y la «sangre azul»: la jerarquía sanguínea operaba hasta en el interior del grupo. Espejo invertido: Historias Desobedientes (hijos de genocidas) gestiona la filiación mediante el repudio público, es decir, mediante el desmarque; Isaac no repudia: opaca y ama.
+## 3. El giro victimal y sus críticos
 
-**«¿Y la posmemoria de Hirsch?»**
-Formulada desde herederos legítimos del dolor; el propio Rothberg anota que no se usa para descendientes de perpetradores. Y Das es explícita: el pasado entra al presente no necesariamente como memoria traumática sino como conocimiento venenoso; el veneno no es una subespecie del trauma.
+Hay una conversación establecida sobre la víctima como figura históricamente producida: Fassin y Rechtman trazaron la genealogía del trauma como categoría moral y de la víctima como sujeto de una economía de legitimidad (*The Empire of Trauma*, 2009); Giglioli radicalizó el diagnóstico (la condición victimal inocula contra la crítica y garantiza una inocencia fuera de duda); Rothberg observa que el discurso de la victimización reobjetiva a los sujetos y les sustrae agencia. La escala peruanista de esa conversación existe y me respalda: Hibbett sobre la «víctima pura» como figura dominante de la producción cultural limeña; Denegri y Hibbett sobre el «buen recordar» como discurso terapéutico-normativo (la memoria como herida que debe cicatrizar), con un detalle finísimo: en ese guion, la víctima es un sujeto «ya en esencia recordante» y el convocado a recordar es el ciudadano-testigo; en ese reparto de papeles, Isaac no tiene casilla. Theidon aporta el suelo etnográfico: en las comunidades ayacuchanas las categorías de la CVR no calzan, víctimas y perpetradores conviven y a veces coinciden en el mismo cuerpo; la pureza de las posiciones es una ficción retrospectiva incluso en el terreno. La zona gris de Levi, dicho en clave andina.
 
-**«¿Racialización como estructura fundante? ¿Fuentes?»**
-Limpieza de sangre: estatutos castellanos del siglo quince trasladados al orden colonial (la genealogía contrainsurgente francesa del término «terrorista» es una segunda genealogía, separada; no compiten). Ancla empírica del terruqueo: Jo-Marie Burt, «Quien habla es terrorista: The Political Use of Fear in Fujimori's Peru», *LARR*, 2006.
+## 4. Modos de memoria: cosmopolita, antagonista, agonista
 
-**«¿Por qué dices "llamado" Conflicto Armado Interno?»**
-La nomenclatura es en sí misma un campo de disputa: Denegri y Hibbett defienden «violencia política» frente al rótulo de la CVR y leen la disputa por el nombre como sintomática. Digo «llamado» para registrar esa disputa sin resolverla aquí.
+Taxonomía útil para situar la ponencia en la lengua franca del congreso. Levy y Sznaider describieron la globalización de una «memoria cosmopolita» modelada sobre el Holocausto: reconciliación, consenso en torno a la víctima inocente, pedagogía del nunca más. Cento Bull y Hansen (2016), desde Mouffe, la critican: ese modo despolitiza (borra el conflicto, las pasiones y la agencia) y deja el campo servido para las memorias antagonistas de las derechas; proponen un tercer modo, agonista, que repolitiza el pasado, restituye las pasiones cívicas e incorpora las perspectivas de los perpetradores para comprender sin legitimar. Traducción a mi caso: las poéticas del duelo y el dispositivo CVR son la instanciación peruana del modo cosmopolita; el terruqueo y su desmentido son el antagonismo que ese consenso no logró conjurar; y la obra de Isaac es legible como gesto agonista avant la lettre: no promete reconciliación, no compite por el estatuto victimal, mantiene el conflicto en suspenso irresuelto. La metabolización ambivalente sería el modo agonista visto desde el campo del arte: lo que un campo cosmopolita hace cuando premia aquello que no puede procesar.
 
-**«En la placa del premio dice Isaac Ruiz Velazco»**
-La figura artística es en sí misma la construcción donde las obras operan; el nombre es parte de esa construcción. Es otra instancia de la inestabilidad enunciativa que describo.
+## 5. Memoria multidireccional y propiedad de la memoria
 
-**«¿Qué cambió exactamente entre 2022 y 2026?»**
-La tachadura llevada al límite: comunicados mecanografiados sin tinta sobre papel negro, cartas casi íntegramente tachadas, nombres borrados de las leyendas de los dibujos, nuevos dibujos a partir del archivo fotográfico. La coyuntura exacerbó la lógica contra-indexical, pero la disposición estaba ya en sus trabajos previos: no es un efecto del miedo sino una poética que el miedo intensificó.
+Rothberg formuló la memoria multidireccional (2009) contra el modelo de la memoria competitiva: los recuerdos no compiten por un espacio escaso sino que se producen unos a otros por préstamo y resonancia. El caso peruano muestra el reverso: un régimen donde la memoria sí funciona como propiedad escasa, distribuida por título de sangre. Sosa lo documenta para Argentina (la «familia herida» como asamblea consanguínea que comandó el duelo por tres décadas; el «pedigrí» y la «sangre azul» operando hasta dentro de HIJOS), citando a Jelin: el monopolio de la memoria, la pérdida y el dolor constituido del lado de las víctimas. Jelin da el marco general (la memoria como campo de luchas por las voces legítimas) y Stern el mecanismo (las memorias sueltas devienen «emblemáticas» mediante selección que confiere sentido y descarta). Mi tesis uno nombra el título de propiedad: el índice. La legitimidad memorial se posee por contigüidad acreditada, y por eso la multidireccionalidad, que presupone memoria sin dueño, encuentra en el posconflicto peruano su caso límite.
 
-**«¿Mandato crítico y mandato de memoria son lo mismo?»**
-Son isomorfos: expectativas normativas sin emisor, cumplidas como hábito. El «mandato de recordar» circula ya en el campo peruano (volumen compilado por Agüero y Del Pino), y su versión terapéutico-normativa es el «buen recordar» de Denegri y Hibbett: la memoria como herida que debe cicatrizar. Detalle fino de *Dando cuenta*: en ese discurso la víctima es un sujeto «ya en esencia recordante» y el convocado a recordar es el ciudadano-testigo; en ese reparto de papeles, Isaac no tiene casilla.
+## 6. La nota semiótica (el corazón técnico)
 
-**«¿No idealizas a Isaac como héroe teórico?»**
-La oscilación está registrada: por momentos su enunciación busca el resguardo de la posición victimal, se articula desde la exclusión sin recibir reconocimiento pleno. Esa oscilación es dato, no defecto: nadie se para fuera del régimen que lo clasifica; hasta el gesto contra-indexical se apoya a ratos en los índices disponibles.
+Los estudios de memoria casi no hablan peirceano, y ahí está mi apuesta metodológica: leer el régimen de memoria como régimen semiótico. El instrumental fino viene de la antropología lingüística. Primera pieza: el índice (conexión real, contigüidad; el signo no se parece a su objeto ni lo nombra por convención: lo toca) y el dicente (el signo en función asertiva: no solo conecta, afirma un hecho sobre su objeto). Segunda pieza: los procesos regimentados que convierten un tipo de signo en otro. Irvine y Gal describieron la «iconización» (2000), que Gal rebautizó «rematización» (2005): un índice leído como icono, el señalamiento naturalizado en semejanza esencial. Ball nombró su conversa, la «dicentización» (2014): un signo leído como si portara conexión efectiva y asertiva con su objeto; lo representado se hace pasar por probado. El terruqueo es dicentización en estado puro: toma una contigüidad (parentesco, cercanía, un trazo en un libro) y la lee como signo asertivo de culpa, presentando el veredicto como si lo hubiera dicho la conexión misma y no el que acusa. Con rematización de fondo: «terruco» además esencializa, convierte el haber-estado-cerca en ser. Y la contra-indexicalidad es, en rigor, de-dicentización sin des-indexicalización: la obra conserva la conexión (las cartas, los comunicados, las fotos siguen tocando lo que tocan) y sustrae la aseveración; suspende el interpretante dicente, no el índice. Tercera pieza, el hábito: en Peirce el interpretante se sedimenta como hábito, y el tránsito índice→veredicto es un hábito interpretativo colectivo; por eso hablo de régimen y no de ideología (el término «régimen semiótico» me permite reglas impersonales y plurales de la semiosis, sin el residuo de falsa conciencia que arrastra la «ideología semiótica» de Keane). La limpieza de sangre entra aquí no como analogía decorativa sino como tecnología genealógico-indexical de larga duración: un sistema donde el ancestro contamina al descendiente con independencia de sus actos, es decir, donde la filiación funciona como índice dicentizado de esencia. El terruqueo la reactiva; la racialización es su estructura.
 
-**«¿Estás refutando a Vich?»**
-No es refutación sino desmarque de plano: aquel arte trabajaba dentro de la gramática del duelo y del reconocimiento, y apostaba por transformar el imaginario; el gesto de Isaac interroga el régimen que decide qué cuenta como memoria legítima. Operan en planos distintos.
+## 7. Archivo: del mal de archivo a la aspiración
 
-**«¿Qué puede hacer entonces el arte? / ¿modo agonístico?»**
-Cento Bull y Hansen («On Agonistic Memory», *Memory Studies* 9(4), 2016): frente al modo antagonístico y al cosmopolita (reconciliación, consenso victimal), el modo agonístico repolitiza el pasado, reconoce pasiones y agencia, incorpora perspectivas sin legitimarlas. La metabolización ambivalente sería la versión de campo de esa apuesta: el arte que repolitiza allí donde el consenso despolitiza.
+El giro archivístico de los estudios de memoria tiene dos aguas. La crítica del archivo como poder: Derrida (*Mal de archivo*: el archivo como domiciliación y consignación, con su pulsión de destrucción), Mbembe (el archivo como conferidor de estatus y cronofagia del Estado), Trouillot (los silencios se producen en momentos precisos: creación de fuentes, de archivos, de relatos, de historia retrospectiva), Taylor (archivo contra repertorio: lo que el documento fija contra lo que el cuerpo transmite). Y una segunda agua, más reciente y más afín a mi cierre: el archivo como práctica orientada al futuro. Appadurai: toda documentación es intervención; el archivo no es la tumba de la huella sino la anticipación de una memoria colectiva; el archivo es en sí mismo una aspiración, y construye capacidad de aspirar entre quienes más la necesitan. La familia teórica natural de SHHH está, además, en el giro afroatlántico del archivo, que teorizó lo que la obra hace materialmente: Hartman y la fabulación crítica (narrar con y contra un archivo cuya estructura es la violencia, sin restituir una verdad que el archivo no puede dar); Sharpe y la redacción y anotación como cuidado (tachar para proteger a los muertos y a los vivos de la mirada que los reduce); Campt y la escucha de lo quieto en las fotografías de identificación (exactamente el material que Isaac interviene: fotos carné, expedientes). Puesto en una frase: SHHH es un contra-archivo que practica la fabulación crítica de Hartman, la redacción-cuidado de Sharpe y la quietud de Campt, y que Appadurai permite leer como aspiración. El caso peruano entra así en conversación con la teoría del archivo negro, donde la opacidad ya es método y no anomalía.
 
-**«¿Y el concurso? ¿Por qué importa tanto Pasaporte?»**
-Espacio internacional localizado que habilita lo inexhibible del campo limeño desde el inicio: el performance de Elena Tejada-Herrera ganó la segunda edición (1999, eje «Lo real como desilusión») y, en palabras de su asesor fundador, en ninguna otra institución habría ocurrido. El palmarés (Bryce, Barboza, Damiani, Watanabe) es casi un canon. Y el premio es, literalmente, movilidad: residencia en la Cité Internationale des Arts, pasaje, beca de francés.
+## 8. Opacidad contra transparencia (Glissant y el régimen del truth-telling)
 
-## Fichas rápidas de autores
+La consagración post-CVR del arte peruano como «truth-telling por otros medios» (Milton) instaló una demanda de transparencia: el arte valioso es el que revela, esclarece, hace visible. Glissant permite nombrar el costo de esa demanda: comprender, en la raíz occidental del término, es reducir a la propia medida; exigir transparencia al subalterno es exigirle que se deje asimilar. Su derecho a la opacidad no es autarquía impenetrable sino subsistencia en una singularidad no reductible, y su formulación más filosa calza con Isaac sin costura: es imposible reducir a nadie a una verdad que no haya generado por sí mismo. Das converge desde la etnografía: hay una honda energía moral en el rehusarse a representar ciertas violaciones, en respetar las fronteras entre decir y mostrar. Y la teoría del silencio en los estudios de memoria da el tercer apoyo: el silencio no es ausencia sino acto producido (Trouillot), socialmente reglado y con tipologías propias (Winter; Vinitzky-Seroussi y Teeger distinguen silencios manifiestos y encubiertos). El viraje del remontaje hacia lo silencioso no es retirada de la memoria: es otra modalidad de ella, y una con teoría propia.
 
-- **Das** — *Life and Words* (2007). Conocimiento venenoso; contenerlo era su expresión; energía moral en rehusarse a representar; fronteras entre decir y mostrar.
-- **Rothberg** — *The Implicated Subject* (2019). Implicación genealógica vs. estructural; paralelo «We are not Trayvon Martin» (reconocimiento de privilegio) vs. «somos estudiantes...» (abjuración defensiva); el discurso victimal reobjetiva y quita agencia.
-- **Sosa** — *Queering Acts of Mourning... The Performances of Blood* (Tamesis, 2014). Regla tácita; familia herida; pedigrí/sangre azul en HIJOS; cita a Jelin (monopolio de la memoria, la pérdida y el dolor).
-- **Ahmed** — *The Cultural Politics of Emotion* (2004), cap. «In the Name of Love». El amor alinea con un ideal y requiere a quienes lo fallan.
-- **Foucault** — *Discurso y verdad* (conferencias de Berkeley). Cinco rasgos: franqueza, verdad, riesgo, crítica, deber. *Ion*: la parresía como prerrogativa ligada al nacimiento; el Perú invierte la escena.
-- **Glissant** — *Poétique de la Relation* (1990), «Pour l'opacité». Singularidad no reductible; nadie reducible a una verdad que no generó. (Cita desde la ed. brasileña 2021; cotejar francés para la escrita.)
-- **Appadurai** — «Archive and Aspiration» (2003) y «The Capacity to Aspire» (2004). Toda documentación es intervención; el archivo como anticipación; capacidad de aspirar desigualmente repartida.
-- **Giglioli** — *Crítica de la víctima* (2014). Ser víctima inocula contra la crítica; misma semántica inmunitaria que la autoinmunidad (Derrida, *Voyous* / *Foi et savoir*).
-- **Agüero** — *Los rendidos* (2015). «Una familia terrorista es una realidad concreta, como una silla, una mesa o un poema»; lo que sostiene la vergüenza es que la pregunta pueda plantearse en cualquier momento y sea válida.
-- **Hibbett / Denegri** — «buen recordar» (*Dando cuenta*, 2016); «víctima pura» (en *Pasados contemporáneos*, 2019).
-- **Vich** — *Poéticas del duelo* (2015). **Milton** — *Art from a Fractured Past* (2014): el arte consagrado como truth-telling por otros medios tras la CVR. **Ulfe** — no todos los testimonios son escuchados por igual. **Jelin** — luchas por las voces legítimas. **Stern y Winn** — memorias emblemáticas; fuente de la metáfora «batallas por la memoria» de la que me distancio.
+## 9. Parresía, testimonio y regímenes de veridicción
+
+El testimonio es el género veridiccional del dispositivo de memoria peruano: la CVR lo montó como tecnología de dignificación, y presupone (Denegri y Hibbett) que la narración en primera persona exige tratamiento de verdad inmediato, libre de dudas. Foucault permite leer ese dispositivo como régimen de veridicción y preguntar qué formas de decir veraz deja fuera. La parresía es una de ellas: no la verdad institucional del testigo protegido, sino el decir franco que expone a quien lo pronuncia. El detalle del *Ion* vale oro si la conversación se pone foucaultiana: en su primera determinación política, la parresía es una prerrogativa ligada al nacimiento (la tragedia de Ion es no poder hablar por no poder acreditar la filiación); el posconflicto peruano invierte la escena, porque aquí es la filiación acreditada la que retiraría el derecho a la palabra, y la parresía de Isaac consiste en hablar pese al nacimiento. La torsión final: parecería incumplir la franqueza (su trabajo es opaco) pero cumple el riesgo de manera literal; su decir veraz no está en aclarar los hechos sino en no retirar el amor. Frente al desmarque (que es, en términos foucaultianos, una confesión invertida: confesar la propia inocencia ante el tribunal que el gesto mismo certifica), la declaración de amor es el único enunciado del posconflicto que no negocia con el índice.
+
+## 10. Tiempo: lo irrevocable y la futuridad
+
+Dos coordenadas temporales enmarcan el cierre. Bevernage: los regímenes de memoria administran la relación entre un pasado que no pasa (lo irrevocable) y un presente que se pretende absuelto; la política del tiempo decide qué pasados se declaran clausurados y cuáles permanecen actuables. El índice que sigue apuntando es, en sus términos, la intrusión de un pasado irrevocable administrada como amenaza permanente: el terruqueo necesita que el conflicto no pase nunca del todo. Y Rigney, del otro lado: el campo de los estudios de memoria vive un giro hacia la futuridad (la memoria de la esperanza, la protesta, las posibilidades), correctivo del sesgo traumático-retrospectivo. Mi cierre con Appadurai se inscribe ahí sin forzarse: «permiso para vivir» no es un enunciado de duelo sino una demanda de habilitación; leerlo con la capacidad de aspirar es leer la memoria desde el futuro que reclama y no desde el pasado que carga. Hartog daría el fondo epocal (regímenes de historicidad, presentismo), pero es fondo, no herramienta.
+
+## 11. La escala latinoamericana (por si la conversación regionaliza)
+
+El caso peruano complica las plantillas del Cono Sur en tres puntos que conviene tener nítidos. Primero: en Argentina y Chile el terrorismo de Estado fue derrotado políticamente y condenado judicialmente, lo que fundó un consenso (frágil pero real) sobre quién fue la víctima; en el Perú, el Estado que combatió a la insurgencia no fue derrotado ni condenado como tal, y la insurgencia carece de todo reservorio de legitimidad pública. Segundo: por eso la segunda generación argentina (Carri, Perez, Bruzzone; Blejmar sobre su autoficción) desacraliza el duelo *desde dentro* de un estatuto victimal disponible: pueden jugar porque la sacralización los ampara; Isaac habla desde donde nunca hubo altar. Tercero: el espejo de Historias Desobedientes (hijos de genocidas que repudian públicamente) muestra la otra gestión posible de la filiación maldita, el repudio, que es estructuralmente un desmarque; Isaac no repudia: opaca y ama. Los tres puntos convergen en la misma conclusión: la categoría «segunda generación», restada la víctima, muestra su límite, y ese límite es la contribución del caso.
+
+## Respuestas de bolsillo
+
+Verdad referencial: lo que puedo afirmar es lo que la obra enuncia; el suspenso de su anclaje es el objeto del análisis, no su obstáculo. Relativización: la crítica apunta al régimen que distribuye legitimidad por filiación; la condena de la violencia de Sendero y el MRTA permanece íntegra; describo una gramática que opera a través de todos, sin emisor. Nomenclatura: digo «llamado» CAI porque la disputa por el nombre es en sí misma sintomática (Denegri y Hibbett defienden «violencia política»). El nombre de la placa: la figura artística es la construcción donde las obras operan; el nombre es parte de ella. Coyuntura fiscal: se narra como contexto y nada más; no detallar diligencias ni contenidos; si preguntan por el «Cuaderno rojo», una frase opaca («un cuaderno que se muestra y no se deja leer») y seguir.
 
 ## Datos duros verificados
 
-- Pasaporte: creado 1998 por la Embajada de Francia, asesoría de Jorge Villacorta; CCPUCP desde 1999; producción AF desde 2009; MAC Lima se suma en 2022.
-- Edición 2022: vigesimoquinta, eje «Amor», curaduría de Julien Petit; premiación 14 de septiembre de 2022; exposición de finalistas en la AF de Miraflores.
-- Texto institucional del premio (citable como evidencia de eufemismo): describe la obra como intervención del archivo familiar con «estética judicial», sobre el amor «a pesar de las imposiciones morales e ideológicas». Nunca nombra al MRTA.
-- Remontaje: Galería Magenta, Barranco, 13 al 27 de junio de 2026; visita guiada el 18; conversatorio el 13 con Gabriela Germaná y Max Hernández Calvo.
-- Coyuntura: reedición del libro de Polay (*Revolución en los Andes*, Achawata, 2024); intervención fiscal al stand en la FIL 2025; investigación preparatoria por apología (art. 316), Isaac convocado en calidad de testigo.
+Pasaporte: creado en 1998 por la Embajada de Francia con asesoría de Jorge Villacorta; CCPUCP desde 1999; producción de la AF desde 2009; MAC Lima se suma en 2022. Edición 2022: vigesimoquinta, eje «Amor», curaduría de Julien Petit, premiación el 14 de septiembre. El texto institucional del premio describe la obra con «estética judicial» y amor «a pesar de las imposiciones morales e ideológicas»: nunca nombra al MRTA (citable como evidencia del eufemismo consagratorio). Precedente habilitante: Tejada-Herrera ganó la segunda edición (1999, «Lo real como desilusión»). Remontaje: Galería Magenta, Barranco, 13 al 27 de junio de 2026; conversatorio el 13 con Gabriela Germaná y Max Hernández Calvo. Coyuntura: reedición de *Revolución en los Andes* de Polay (Achawata, 2024); intervención fiscal al stand en la FIL 2025; investigación preparatoria por apología (artículo 316), Isaac convocado en calidad de testigo.
 
-## Manejo
-
-- La coyuntura fiscal se narra como contexto, nada más: no detallar diligencias, contenidos ni estrategias. El límite lo fija Isaac.
-- Si preguntan por el «Cuaderno rojo»: una frase opaca («un cuaderno que se muestra y no se deja leer») y seguir.
-- Sosa se cita con su acotación temporal («durante más de tres décadas»); si la objetan, ella misma registra el desplazamiento.
-- Si piden casos de arte que confirmen la gramática purificadora: el corpus de la tesis uno no son obras sino fórmulas públicas, y las fórmulas están a la vista de todos; la evidencia del lado del arte es apofática (lo que el campo no pudo exhibir).
 
 ## Bibliografía (APA 7)
 
-*(«y» en lugar de «&» según preferencia propia; las entradas marcadas con ⚠ requieren cotejo de datos contra Zotero antes de circular por escrito)*
+*(«y» en lugar de «&» según preferencia propia; ⚠ = cotejar datos contra Zotero antes de circular por escrito)*
 
 Agüero, J. C. (2015). *Los rendidos. Sobre el don de perdonar*. Instituto de Estudios Peruanos.
 
@@ -89,7 +69,13 @@ Appadurai, A. (2004). The capacity to aspire: Culture and the terms of recogniti
 
 Ball, C. (2014). On dicentization. *Journal of Linguistic Anthropology, 24*(2), 151–173.
 
+Bevernage, B. (2011). *History, memory, and state-sponsored violence: Time and justice*. Routledge.
+
 Burt, J.-M. (2006). «Quien habla es terrorista»: The political use of fear in Fujimori's Peru. *Latin American Research Review, 41*(3), 32–62. ⚠ número y páginas
+
+Campt, T. (2017). *Listening to images*. Duke University Press.
+
+Caruth, C. (1996). *Unclaimed experience: Trauma, narrative, and history*. Johns Hopkins University Press.
 
 Cento Bull, A. y Hansen, H. L. (2016). On agonistic memory. *Memory Studies, 9*(4), 390–404.
 
@@ -97,32 +83,60 @@ Das, V. (2007). *Life and words: Violence and the descent into the ordinary*. Un
 
 Denegri, F. y Hibbett, A. (Eds.). (2016). *Dando cuenta. Estudios sobre el testimonio de la violencia política en el Perú (1980–2000)*. Fondo Editorial de la Pontificia Universidad Católica del Perú.
 
-Fassin, D. y Honneth, A. (Eds.). (2022). *Crisis under critique: How people assess, transform, and respond to critical situations*. Columbia University Press. ⚠ verificar título exacto del volumen
+Derrida, J. (1995). *Mal d'archive. Une impression freudienne*. Galilée.
+
+Fassin, D. y Honneth, A. (Eds.). (2022). *Crisis under critique: How people assess, transform, and respond to critical situations*. Columbia University Press. ⚠ título exacto del volumen
 
 Fassin, D. y Rechtman, R. (2009). *The empire of trauma: An inquiry into the condition of victimhood*. Princeton University Press.
 
-Foucault, M. (2017). *Discurso y verdad. Conferencias sobre el coraje de decirlo todo* (H.-P. Fruchaud y D. Lorenzini, Eds.). Siglo XXI Editores. ⚠ subtítulo exacto de la edición
+Foucault, M. (2017). *Discurso y verdad. Conferencias sobre el coraje de decirlo todo* (H.-P. Fruchaud y D. Lorenzini, Eds.). Siglo XXI Editores. ⚠ subtítulo exacto
+
+Gal, S. e Irvine, J. T. (2019). *Signs of difference: Language and ideology in social life*. Cambridge University Press.
 
 Giglioli, D. (2017). *Crítica de la víctima*. Herder. (Obra original publicada en 2014).
 
-Glissant, É. (1990). *Poétique de la Relation*. Gallimard. [Edición consultada: *Poética da relação*, Bazar do Tempo, 2021; cotejar el original francés antes de citar por escrito].
+Glissant, É. (1990). *Poétique de la Relation*. Gallimard. [Ed. consultada: *Poética da relação*, Bazar do Tempo, 2021; cotejar el original].
 
-Hibbett, A. (2019). La problemática centralidad de la víctima en la memoria cultural peruana. En L. de Vivanco y M. T. Johansson (Eds.), *Pasados contemporáneos. Acercamientos interdisciplinarios a los derechos humanos y las memorias en Perú y América Latina*. Iberoamericana Vervuert. ⚠ subtítulo y páginas
+Hartman, S. (2008). Venus in two acts. *Small Axe, 12*(2), 1–14.
+
+Hibbett, A. (2019). La problemática centralidad de la víctima en la memoria cultural peruana. En L. de Vivanco y M. T. Johansson (Eds.), *Pasados contemporáneos*. Iberoamericana Vervuert. ⚠ subtítulo y páginas
 
 Hirsch, M. (2012). *The generation of postmemory: Writing and visual culture after the Holocaust*. Columbia University Press.
 
 Jelin, E. (2021). *The struggle for the past: How we construct social memories*. Berghahn Books. (Obra original: *Los trabajos de la memoria*, Siglo XXI, 2002).
 
+Levy, D. y Sznaider, N. (2006). *The Holocaust and memory in the global age*. Temple University Press.
+
 Marcus, G. E. (Ed.). (2000). *Para-sites: A casebook against cynical reason*. University of Chicago Press.
+
+Mbembe, A. (2002). The power of the archive and its limits. En C. Hamilton et al. (Eds.), *Refiguring the archive* (pp. 19–26). Kluwer. ⚠ páginas
 
 Milton, C. (Ed.). (2014). *Art from a fractured past: Memory and truth-telling in post-Shining Path Peru*. Duke University Press.
 
 Peirce, C. S. (1998). *The essential Peirce: Selected philosophical writings* (Vol. 2, Peirce Edition Project, Ed.). Indiana University Press.
 
+Rigney, A. (2025). *Remembering hope: The cultural afterlife of protest*. Oxford University Press. ⚠ editorial
+
+Rothberg, M. (2009). *Multidirectional memory: Remembering the Holocaust in the age of decolonization*. Stanford University Press.
+
 Rothberg, M. (2019). *The implicated subject: Beyond victims and perpetrators*. Stanford University Press.
+
+Sharpe, C. (2016). *In the wake: On Blackness and being*. Duke University Press.
 
 Sosa, C. (2014). *Queering acts of mourning in the aftermath of Argentina's dictatorship: The performances of blood*. Tamesis.
 
-Ulfe, M. E. (2016). Reflexiones sobre los usos del testimonio en la esfera pública peruana. En F. Denegri y A. Hibbett (Eds.), *Dando cuenta. Estudios sobre el testimonio de la violencia política en el Perú (1980–2000)*. Fondo Editorial PUCP. ⚠ verificar que el capítulo pertenezca a este volumen y páginas
+Stern, S. J. y Winn, P. (Eds.). (2014). *No hay mañana sin ayer. Batallas por la memoria histórica en el Cono Sur*. Instituto de Estudios Peruanos. ⚠ coeditores completos
+
+Taylor, D. (2003). *The archive and the repertoire: Performing cultural memory in the Americas*. Duke University Press.
+
+Theidon, K. (2004). *Entre prójimos. El conflicto armado interno y la política de la reconciliación en el Perú*. Instituto de Estudios Peruanos.
+
+Trouillot, M.-R. (1995). *Silencing the past: Power and the production of history*. Beacon Press.
+
+Ulfe, M. E. (2016). Reflexiones sobre los usos del testimonio en la esfera pública peruana. En F. Denegri y A. Hibbett (Eds.), *Dando cuenta*. Fondo Editorial PUCP. ⚠ verificar volumen y páginas
 
 Vich, V. (2015). *Poéticas del duelo. Ensayos sobre arte, memoria y violencia política en el Perú*. Instituto de Estudios Peruanos.
+
+Vinitzky-Seroussi, V. y Teeger, C. (2010). Unpacking the unspoken: Silence in collective memory and forgetting. *Social Forces, 88*(3), 1103–1122. ⚠ páginas
+
+Winter, J. (2010). Thinking about silence. En E. Ben-Ze'ev, R. Ginio y J. Winter (Eds.), *Shadows of war: A social history of silence in the twentieth century* (pp. 3–31). Cambridge University Press. ⚠ páginas
