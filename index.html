@@ -72,7 +72,10 @@
 
   /* ---- texto ---- */
   #texto{
-    width:68%; margin:0 auto 0 6%; padding:72px 0 45vh;
+    width:68%; margin:0 auto 0 6%;
+    /* pista de despliegue: arriba 28vh = línea 1 nace sobre el eje de foco;
+       abajo 72vh = la última línea alcanza el eje al final del scroll */
+    padding:28vh 0 72vh;
     font-size:var(--fs); line-height:1.65;
   }
   #texto h1,#texto h2,#texto h3{line-height:1.3; margin:1.6em 0 .6em}
@@ -89,7 +92,7 @@
   #texto strong{font-weight:700}
   #estado{
     font-family:var(--mono); font-size:11px; color:var(--ink-dim);
-    text-align:center; padding-top:40vh;
+    text-align:center; padding-top:8vh;
   }
 
   /* ---- focus dinámico: una línea en negrita óptica, el resto atenuado ---- */
@@ -113,18 +116,31 @@
     touch-action:manipulation;
   }
   #focusbtn.on{border-color:var(--accent); color:var(--accent)}
+
+  /* ---- progreso de lectura ---- */
+  #pbar{
+    position:fixed; top:0; left:0; height:3px; width:0%;
+    background:var(--accent); z-index:11;
+  }
+  #pct{
+    font-size:13px; color:var(--ink-dim); letter-spacing:.06em;
+    padding:2px 8px; font-variant-numeric:tabular-nums;
+  }
+  #pct b{color:var(--ink); font-weight:600}
   @media (max-width:900px){
     #texto{width:88%; margin-left:6%}
   }
 </style>
 </head>
 <body>
+  <div id="pbar" aria-hidden="true"></div>
   <div id="site" title="recargar">ponencia</div>
   <div id="chrome">
     <div id="clock">--:--</div>
     <div id="timer">15:00</div>
     <div id="timer-hint">tap inicia/pausa · mantener resetea</div>
     <button id="focusbtn" class="on" aria-pressed="true">focus ●</button>
+    <div id="pct"><b>0%</b> · falta 100%</div>
   </div>
   <div id="fontctl">
     <button id="f-menos" aria-label="Texto más pequeño">A−</button>
@@ -375,10 +391,30 @@ function paintFocus(){
 var rafPend = false;
 function schedFocus(){
   if (rafPend) return; rafPend = true;
-  requestAnimationFrame(function(){ rafPend = false; paintFocus(); });
+  requestAnimationFrame(function(){ rafPend = false; paintFocus(); paintProgress(); });
 }
 window.addEventListener('scroll', schedFocus, { passive:true });
 window.addEventListener('resize', schedFocus);
+
+/* ===== progreso de lectura (núcleo verificado en Node, 7 aserciones) ===== */
+function progressPct(axisYdoc, contentTop, contentBottom){
+  var span = contentBottom - contentTop;
+  if (span <= 0) return 0;
+  return Math.max(0, Math.min(100, Math.round(((axisYdoc - contentTop) / span) * 100)));
+}
+var elPbar = $('pbar'), elPct = $('pct');
+function paintProgress(){
+  var t = $('texto');
+  var first = t.firstElementChild, last = t.lastElementChild;
+  if (!first || !last) return;
+  var axis = window.innerHeight * 0.28 + (fs * 1.65) / 2;   // mismo eje que el focus
+  var y = window.scrollY || window.pageYOffset || 0;
+  var top = first.getBoundingClientRect().top + y;
+  var bottom = last.getBoundingClientRect().bottom + y;
+  var p = progressPct(y + axis, top, bottom);
+  elPbar.style.width = p + '%';
+  elPct.innerHTML = '<b>' + p + '%</b> · falta ' + (100 - p) + '%';
+}
 
 function setFocusBtn(){
   btnFocus.classList.toggle('on', focusOn);
