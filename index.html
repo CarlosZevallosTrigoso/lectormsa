@@ -20,7 +20,7 @@
     --warn:#b06a36;        /* naranja de advertencia */
     --mono:"Fira Code", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
     --serif: "EB Garamond", Georgia, "Times New Roman", serif;
-    --fs:14px;             /* tamaño base, ajustable */
+    --fs:17px;             /* tamaño base, ajustable (17 para EB Garamond) */
   }
   *{box-sizing:border-box}
   html,body{margin:0}
@@ -356,10 +356,10 @@ elTimer.addEventListener('pointerleave', function(){ clearTimeout(holdT); });
 elTimer.addEventListener('contextmenu', function(e){ e.preventDefault(); });
 
 /* ===== tamaño de texto (12–24px, persistido) ===== */
-var fs = 14;
-try{ fs = Math.min(24, Math.max(12, parseInt(localStorage.getItem('ponencia_fs'),10) || 14)); }catch(e){}
+var fs = 17;
+try{ fs = Math.min(28, Math.max(12, parseInt(localStorage.getItem('ponencia_fs'),10) || 17)); }catch(e){}
 function setFS(v){
-  fs = Math.min(24, Math.max(12, v));
+  fs = Math.min(28, Math.max(12, v));
   document.documentElement.style.setProperty('--fs', fs + 'px');
   try{ localStorage.setItem('ponencia_fs', String(fs)); }catch(e){}
   schedFocus();
