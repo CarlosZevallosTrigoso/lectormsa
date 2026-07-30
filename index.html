@@ -6,6 +6,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <title>Ponencia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg:#d1d1d1;          /* gris 18% (18% de negro), neutro sin tinte */
@@ -16,7 +19,7 @@
     --accent:#586a45;      /* musgo oscuro sobre claro */
     --warn:#b06a36;        /* naranja de advertencia */
     --mono:"Fira Code", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-    --serif: Georgia, "Times New Roman", serif;
+    --serif: "EB Garamond", Georgia, "Times New Roman", serif;
     --fs:14px;             /* tamaño base, ajustable */
   }
   *{box-sizing:border-box}
@@ -77,7 +80,7 @@
     /* pista de despliegue: arriba 28vh = línea 1 nace sobre el eje de foco;
        abajo 72vh = la última línea alcanza el eje al final del scroll */
     padding:28vh 0 72vh;
-    font-size:var(--fs); line-height:1.65;
+    font-size:var(--fs); line-height:1.7; font-weight:500;
   }
   #texto h1,#texto h2,#texto h3{line-height:1.3; margin:1.6em 0 .6em}
   #texto h1{font-size:1.7em}
@@ -146,6 +149,15 @@
     touch-action:manipulation;
   }
   #themebtn:active{border-color:var(--accent); color:var(--accent)}
+  #qabtn{
+    font-family:var(--mono); font-size:11px; letter-spacing:.08em;
+    min-width:110px; min-height:44px; padding:8px 14px;
+    border:1px solid var(--line); border-radius:2px;
+    background:var(--chip); color:var(--ink-dim); cursor:pointer;
+    touch-action:manipulation;
+  }
+  #qabtn.on{border-color:var(--accent); color:var(--accent)}
+  #qabtn:active{border-color:var(--accent); color:var(--accent)}
 
   /* ---- tema oscuro (invertir): carbón + hueso, paleta czt ---- */
   body.dark{
@@ -200,6 +212,7 @@
     <div id="dnow">diapo <b>–</b></div>
     <button id="focusbtn" class="on" aria-pressed="true">focus ●</button>
     <button id="themebtn" aria-pressed="false">◐ oscuro</button>
+    <button id="qabtn" aria-pressed="false">Q&amp;A →</button>
   </div>
   <div id="fontctl">
     <button id="f-menos" aria-label="Texto más pequeño">A−</button>
@@ -531,9 +544,12 @@ document.addEventListener('visibilitychange', function(){
 pedirLock();
 
 /* ===== carga del .md con cache-busting ===== */
-function cargar(){
+var docNow = 'ponencia.md';
+var scrollPonencia = 0;
+function cargar(doc, despues){
+  if (doc) docNow = doc;
   var el = $('texto');
-  fetch('ponencia.md?t=' + Date.now(), { cache: 'no-store' })
+  fetch(docNow + '?t=' + Date.now(), { cache: 'no-store' })
     .then(function(r){
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.text();
@@ -544,12 +560,37 @@ function cargar(){
       el.innerHTML = marked.parse(md);
       document.title = (el.querySelector('h1') || {textContent:'Ponencia'}).textContent;
       schedFocus();
+      if (despues) despues();
     })
     .catch(function(err){
-      el.innerHTML = '<div id="estado">no se pudo cargar ponencia.md — ' + String(err.message || err) +
+      el.innerHTML = '<div id="estado">no se pudo cargar ' + docNow + ' — ' + String(err.message || err) +
         '<br><br>verifica que el archivo exista en el repo y recarga (tap en «ponencia»)</div>';
     });
 }
+/* ===== hoja de Q&A: alternar con la ponencia conservando el punto de lectura ===== */
+var btnQA = $('qabtn');
+function setQABtn(){
+  var enQA = (docNow === 'qa.md');
+  btnQA.textContent = enQA ? '\u2190 ponencia' : 'Q&A \u2192';
+  btnQA.classList.toggle('on', enQA);
+  btnQA.setAttribute('aria-pressed', enQA ? 'true' : 'false');
+}
+btnQA.addEventListener('click', function(){
+  if (docNow === 'qa.md'){
+    cargar('ponencia.md', function(){
+      window.scrollTo(0, scrollPonencia);
+      setQABtn(); schedFocus();
+    });
+  } else {
+    scrollPonencia = window.scrollY || window.pageYOffset || 0;
+    cargar('qa.md', function(){
+      window.scrollTo(0, 0);
+      setQABtn();
+    });
+  }
+});
+setQABtn();
+
 $('site').addEventListener('click', function(){ location.reload(); });
 cargar();
 })();
