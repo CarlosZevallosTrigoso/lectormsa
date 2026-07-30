@@ -92,14 +92,18 @@
     text-align:center; padding-top:40vh;
   }
 
-  /* ---- focus dinámico: marcadores sobre líneas reales ---- */
+  /* ---- focus dinámico: una línea en negrita óptica, el resto atenuado ---- */
   #focus-overlay{
     position:fixed; inset:0; pointer-events:none; z-index:1;
   }
-  .marker{
-    position:absolute; border-radius:2px;
-    background:rgba(143,166,118,.42);   /* marcador musgo, estilo resaltador */
-    will-change:transform;
+  .marker{ /* fallback si el navegador no tiene Highlight API: subrayado fino */
+    position:absolute; height:2px; border-radius:2px;
+    background:var(--accent);
+  }
+  body.dim #texto{ color:#5a594f; }          /* tinta al ~65%: solo color, cero reflow */
+  ::highlight(foco){
+    color:#000;
+    text-shadow: 0.45px 0 0 #000, -0.45px 0 0 #000;  /* engrosa trazos sin mover métricas */
   }
   #focusbtn{
     font-family:var(--mono); font-size:11px; letter-spacing:.08em;
@@ -276,7 +280,7 @@ setFS(fs);
 $('f-mas').addEventListener('click', function(){ setFS(fs+1); });
 $('f-menos').addEventListener('click', function(){ setFS(fs-1); });
 
-/* ===== focus dinámico (núcleo verificado en Node con 12 aserciones) ===== */
+/* ===== focus dinámico: una línea (núcleo verificado en Node, 17 aserciones) ===== */
 function mergeLineRects(rects, tol){
   var lines = [];
   for (var i = 0; i < rects.length; i++){
@@ -298,48 +302,74 @@ function mergeLineRects(rects, tol){
   }
   return lines.sort(function(a,b){ return a.top - b.top; });
 }
-function linesInZone(lines, zTop, zBottom){
-  return lines.filter(function(L){
-    var c = (L.top + L.bottom)/2; return c >= zTop && c <= zBottom;
-  });
+function pickNearestLine(lines, y, maxDist){
+  var best = null, bd = Infinity;
+  for (var i = 0; i < lines.length; i++){
+    var c = (lines[i].top + lines[i].bottom)/2, d = Math.abs(c - y);
+    if (d < bd){ bd = d; best = lines[i]; }
+  }
+  return (best && bd <= maxDist) ? best : null;
 }
 
 var overlay = $('focus-overlay'), btnFocus = $('focusbtn');
 var focusOn = true;
 try{ focusOn = localStorage.getItem('ponencia_focus') !== '0'; }catch(e){}
+var hasHL = typeof Highlight !== 'undefined' && window.CSS && CSS.highlights;
 
+function clearFocus(){
+  if (hasHL) CSS.highlights.delete('foco');
+  overlay.textContent = '';
+}
+/* Range de la línea visual: caret en sus extremos (caretPositionFromPoint
+   estándar; caretRangeFromPoint como legado WebKit) */
+function rangeForLine(L){
+  var cy = (L.top + L.bottom) / 2, r;
+  if (document.caretPositionFromPoint){
+    var a = document.caretPositionFromPoint(L.left + 2, cy);
+    var b = document.caretPositionFromPoint(L.right - 2, cy);
+    if (!a || !b) return null;
+    r = document.createRange();
+    r.setStart(a.offsetNode, a.offset); r.setEnd(b.offsetNode, b.offset);
+  } else if (document.caretRangeFromPoint){
+    var ra = document.caretRangeFromPoint(L.left + 2, cy);
+    var rb = document.caretRangeFromPoint(L.right - 2, cy);
+    if (!ra || !rb) return null;
+    r = document.createRange();
+    r.setStart(ra.startContainer, ra.startOffset);
+    r.setEnd(rb.startContainer, rb.startOffset);
+  } else return null;
+  return r.collapsed ? null : r;
+}
 function paintFocus(){
-  if (!focusOn){ overlay.textContent = ''; return; }
-  var zTop = window.innerHeight * 0.28;
-  var zBottom = zTop + fs * 1.65 * 3;            // zona de 3 líneas
+  if (!focusOn){ clearFocus(); return; }
+  var lineH = fs * 1.65;
+  var focusY = window.innerHeight * 0.28 + lineH / 2;  // eje de la línea en foco
   var blocks = $('texto').querySelectorAll('p,h1,h2,h3,li,blockquote');
   var rects = [];
   for (var i = 0; i < blocks.length; i++){
     var br = blocks[i].getBoundingClientRect();
-    if (br.bottom < zTop) continue;
-    if (br.top > zBottom) break;                 // orden de documento: ya no hay más
+    if (br.bottom < focusY - lineH * 1.5) continue;
+    if (br.top > focusY + lineH * 1.5) break;
     var range = document.createRange();
     range.selectNodeContents(blocks[i]);
     var frs = range.getClientRects();
     for (var k = 0; k < frs.length; k++) rects.push(frs[k]);
   }
-  var lines = linesInZone(mergeLineRects(rects, fs * 0.6), zTop, zBottom);
-  // pool de marcadores: reusar nodos, crear solo los que falten
-  while (overlay.children.length < lines.length){
+  var L = pickNearestLine(mergeLineRects(rects, fs * 0.6), focusY, lineH);
+  if (!L){ clearFocus(); return; }
+  if (hasHL){
+    var lr = rangeForLine(L);
+    if (lr){ CSS.highlights.set('foco', new Highlight(lr)); overlay.textContent=''; return; }
+  }
+  // fallback: subrayado fino bajo la línea
+  if (!overlay.firstChild){
     var m = document.createElement('div'); m.className = 'marker';
     overlay.appendChild(m);
   }
-  while (overlay.children.length > lines.length){
-    overlay.removeChild(overlay.lastChild);
-  }
-  var pad = 4;
-  for (var n = 0; n < lines.length; n++){
-    var L = lines[n], el = overlay.children[n];
-    el.style.top = (L.top - 1) + 'px';
-    el.style.left = (L.left - pad) + 'px';
-    el.style.width = (L.right - L.left + pad*2) + 'px';
-    el.style.height = (L.bottom - L.top + 2) + 'px';
-  }
+  var u = overlay.firstChild;
+  u.style.top = (L.bottom + 1) + 'px';
+  u.style.left = L.left + 'px';
+  u.style.width = (L.right - L.left) + 'px';
 }
 // scroll/resize -> un solo repintado por frame
 var rafPend = false;
@@ -354,6 +384,7 @@ function setFocusBtn(){
   btnFocus.classList.toggle('on', focusOn);
   btnFocus.setAttribute('aria-pressed', focusOn ? 'true' : 'false');
   btnFocus.textContent = focusOn ? 'focus ●' : 'focus ○';
+  document.body.classList.toggle('dim', focusOn);
 }
 btnFocus.addEventListener('click', function(){
   focusOn = !focusOn;
