@@ -4,9 +4,7 @@ Carlos Zevallos Trigoso
 
 I
 
-Esta presentación tiene como marco mi investigación doctoral sobre el campo del arte contemporáneo peruano y lo que llamo su «mandato crítico»: una cierta expectativa normativa de que las y los artistas desarrollen proyectos que procesen, interpreten y respondan críticamente a las múltiples crisis que estructuran nuestro presente.
-
-Es una expectativa peculiar porque no tiene autor específico y sin embargo opera como un hábito ambivalente. Me acerco a la idea de crisis desde el trabajo del antropólogo Didier Fassin, es decir: crisis como un operador narrativo: las situaciones de crisis no anteceden a sus representaciones, sino que toman forma en ellas. A su vez, me interesa abordar las crisis desde la pregunta por los conocimientos que generan las y los sujetos que emergen de ellas.
+Esta presentación tiene como marco mi investigación doctoral sobre el campo del arte contemporáneo peruano y lo que llamo su «mandato crítico»: una cierta expectativa normativa de que las y los artistas desarrollen proyectos que procesen, interpreten y respondan críticamente a las múltiples crisis que estructuran nuestro presente. Es una expectativa peculiar: no tiene autor específico y sin embargo opera como hábito. Entiendo aquí la crisis, con Didier Fassin, como un operador narrativo, y me pregunto por los conocimientos que generan quienes están dentro de ella.
 
 En esta ocasión me ocupo de una crisis que en el Perú permanece abierta: la de la memoria colectiva sobre el llamado Conflicto Armado Interno; una crisis que no consiste solamente en qué se recuerda, sino en quién está autorizado a recordar.
 
@@ -16,9 +14,7 @@ II
 
 [[D2]] ¿Quién es Isaac Ernesto? Esta pregunta no admite una respuesta definitiva, y esa inestabilidad es constitutiva: quién es Isaac Ernesto depende, en cada instancia, de sus propios enunciados. 
 
-En su página web, donde figura su portafolio, Isaac Ernesto se presenta como un artista visual egresado de la Escuela Nacional Superior Autónoma de Bellas Artes del Perú, nacido en Huancayo o Lima en 1992\. Ha sido finalista en cuatro ocasiones del Premio ICPNA de Arte Contemporáneo, primer premio del Premio Nacional de Artes Visuales del año 2018 y además ganador del Premio del concurso nacional Pasaporte Para un Artista del año 2022 (obra de la que hablaré precisamente).
-
-Podríamos decir que tiene una trayectoria que ha sido reconocida institucionalmente aunque, al mismo tiempo, carece de la representación comercial de una galería de arte o de una distribución sostenida en el mercado local: algo que entiendo como un reconocimiento precario, sin seguridad existencial.
+En su portafolio en línea, Isaac Ernesto se presenta como un artista visual egresado de la Escuela Nacional Superior Autónoma de Bellas Artes del Perú, nacido en Huancayo o Lima en 1992. Ha sido finalista en cuatro ocasiones del Premio ICPNA de Arte Contemporáneo, ganador del Premio Nacional de Artes Visuales de Trujillo del año dos mil dieciocho y del concurso nacional Pasaporte Para un Artista del año dos mil veintidós, con la obra de la que hablaré hoy. Una trayectoria reconocida institucionalmente que carece, sin embargo, de representación de galería o de un mercado sostenido: un reconocimiento precario, sin seguridad existencial.
 
 Isaac Ernesto, además, se presenta a sí mismo desde la posición de lo abyecto y reclama una genealogía como hijo de militantes del Movimiento Revolucionario Túpac Amaru (MRTA). 
 
@@ -40,7 +36,7 @@ Su práctica se sostiene en la autobiografía y no desde la lógica del testimon
 
 Esta instalación recibió el primer premio, arropada, me permito especular, por un marco cuasi-diplomático proporcionado por la Alianza Francesa.
 
-[[D9]] II. 2
+[[D9]] II.2
 
 Entre fines de dos mil veinticinco y junio de este año emprendimos juntos el remontaje de la instalación en un espacio independiente de Barranco, bajo mi curaduría, [[D10]] como experimento metodológico para mi investigación. 
 
@@ -70,7 +66,7 @@ Respondemos a una acusación de esencia con una declaración de esencia, aceptan
 
 El arte de la memoria participa de esa gramática por otra vía: la exigencia de víctima inocente, dentro de lo que Denegri y Hibbett llamaron el «buen recordar». El sujeto legítimo de las «poéticas del duelo» que describió Víctor Vich es un sujeto previamente purificado. 
 
-Duelo y desmarque realizan la misma operación en registros distintos: para ser llorado públicamente, como para marchar públicamente, hay que acreditar cierta limpieza primero. Y la regla no parece ser solamente peruana: en su libro *Queering Acts of Mourning*, subtitulado *Las performances de la sangre*, Cecilia Sosa mostró que en la Argentina posdictatorial operó durante más de tres décadas una regla cultural tácita según la cual solo quienes fueron directamente afectados por la represión militar estaban autorizados a asumir el derecho de recordar: una «familia herida», consanguínea, que comandó la experiencia del duelo. 
+Duelo y desmarque realizan la misma operación en registros distintos: para ser llorado públicamente, como para marchar públicamente, hay que acreditar cierta limpieza primero. 
 
 [[D28]] TESIS 2
 
@@ -86,11 +82,11 @@ La parresía, tal como Michel Foucault la recuperó, exige un decir franco cuya 
 
 [[D29]] TESIS 3
 
-La obra “SHHH (permiso para vivir)” realiza una operación que propongo llamar contra-indexical: conserva los documentos y las conexiones reales que estos establecen, pero suspende la operación que convierte el índice en veredicto. Sus tachaduras sostienen la relación en cuanto relación. En esa misma operación, el archivo deja de administrar un pasado y funciona, siguiendo a Appadurai, como una aspiración: la anticipación de una memoria que todavía no tiene lugar.
+La obra *SHHH (permiso para vivir)* realiza una operación que propongo llamar contra-indexical: conserva los documentos y las conexiones reales que estos establecen, pero suspende la operación que convierte el índice en veredicto. Sus tachaduras sostienen la relación en cuanto relación. En esa misma operación, el archivo deja de administrar un pasado y funciona, siguiendo a Appadurai, como una aspiración: la anticipación de una memoria que todavía no tiene lugar.
 
 La operación no es negar: las cartas, los comunicados, las fotografías siguen ahí, presentes; la conexión no se rompe. Porque una cosa es que un signo toque algo, y otra que afirme algo sobre lo que toca: entre el contacto y el veredicto hay un paso, un hábito interpretativo (aquello que la antropología semiótica denomina dicentización), y es ese paso, no la conexión, lo que la obra interrumpe.
 
- Los borramientos sostienen el vínculo sin entregarlo a la tipificación. La posición que así se resguarda es la que Michael Rothberg llamó el sujeto implicado: quien no es víctima ni perpetrador pero está enredado en las condiciones de la violencia, y a quien el régimen indexical no sabe leer; solo sabe preguntarle de quién es hijo. 
+Los borramientos sostienen el vínculo sin entregarlo a la tipificación. La posición que así se resguarda es la que Michael Rothberg llamó el sujeto implicado: quien no es víctima ni perpetrador pero está enredado en las condiciones de la violencia, y a quien el régimen indexical no sabe leer; solo sabe preguntarle de quién es hijo. 
 
 Édouard Glissant reclamó para esto el derecho a la opacidad, que no es alienación impenetrable sino subsistencia en una singularidad irreductible; es imposible, nos dice, reducir a nadie a una verdad que no haya generado por sí mismo.
 
