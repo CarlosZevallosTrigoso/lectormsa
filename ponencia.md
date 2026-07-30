@@ -88,9 +88,11 @@ La parresía, tal como Michel Foucault la recuperó, exige un decir franco cuya 
 
 La obra “SHHH (permiso para vivir)” realiza una operación que propongo llamar contra-indexical: conserva los documentos y las conexiones reales que estos establecen, pero suspende la operación que convierte el índice en veredicto. Sus tachaduras sostienen la relación en cuanto relación. En esa misma operación, el archivo deja de administrar un pasado y funciona, siguiendo a Appadurai, como una aspiración: la anticipación de una memoria que todavía no tiene lugar.
 
-La operación no es negar: las cartas, los comunicados, las fotografías siguen ahí, presentes; la conexión no se rompe. Lo que se interrumpe es el hábito que convierte la cercanía en sentencia. Los borramientos sostienen el vínculo sin entregarlo a la tipificación. La posición que así se resguarda es la que Michael Rothberg llamó el sujeto implicado: quien no es víctima ni perpetrador pero está enredado en las condiciones de la violencia, y a quien el régimen indexical no sabe leer; solo sabe preguntarle de quién es hijo. 
+La operación no es negar: las cartas, los comunicados, las fotografías siguen ahí, presentes; la conexión no se rompe. Porque una cosa es que un signo toque algo, y otra que afirme algo sobre lo que toca: entre el contacto y el veredicto hay un paso, un hábito interpretativo (aquello que la antropología semiótica denomina dicentización), y es ese paso, no la conexión, lo que la obra interrumpe.
 
-Édouard Glissant reclamó para esto el derecho a la opacidad, que no es alienación impenetrable sino subsistencia en una singularidad irreductible; es imposible, nos dice, reducir a nadie a una verdad que no haya generado por sí mismo. Y esta suspensión tiene, además, una política del tiempo: si toda documentación es intervención, como propone Appadurai, la estética de expediente de esta obra no administra un pasado: anticipa una memoria que todavía no tiene lugar.
+ Los borramientos sostienen el vínculo sin entregarlo a la tipificación. La posición que así se resguarda es la que Michael Rothberg llamó el sujeto implicado: quien no es víctima ni perpetrador pero está enredado en las condiciones de la violencia, y a quien el régimen indexical no sabe leer; solo sabe preguntarle de quién es hijo. 
+
+Édouard Glissant reclamó para esto el derecho a la opacidad, que no es alienación impenetrable sino subsistencia en una singularidad irreductible; es imposible, nos dice, reducir a nadie a una verdad que no haya generado por sí mismo.
 
 [[D30]] Coda
 
