@@ -8,10 +8,11 @@
 <title>Ponencia</title>
 <style>
   :root{
-    --bg:#e8e6e0;          /* gris claro cálido */
+    --bg:#d1d1d1;          /* gris 18% (18% de negro), neutro sin tinte */
     --ink:#111111;
-    --ink-dim:#6b6a63;
-    --line:#c9c7bd;
+    --ink-dim:#6e6e6e;
+    --line:#b0b0b0;
+    --chip:#dedede;        /* fondo de botones, neutro apenas más claro */
     --accent:#586a45;      /* musgo oscuro sobre claro */
     --warn:#b06a36;        /* naranja de advertencia */
     --mono:"Fira Code", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
@@ -40,7 +41,7 @@
     font-size:22px; letter-spacing:.08em; color:var(--ink);
     border:1px solid var(--line); border-radius:2px;
     padding:10px 14px; min-width:110px; min-height:44px;
-    text-align:center; cursor:pointer; background:#f2f0ea;
+    text-align:center; cursor:pointer; background:var(--chip);
     touch-action:manipulation;
   }
   #timer.run{border-color:var(--accent); color:var(--accent)}
@@ -56,7 +57,7 @@
   #fontctl button{
     font-family:var(--mono); font-size:16px; cursor:pointer;
     width:44px; height:44px; border-radius:2px;
-    border:1px solid var(--line); background:#f2f0ea; color:var(--ink);
+    border:1px solid var(--line); background:var(--chip); color:var(--ink);
     touch-action:manipulation;
   }
   #fontctl button:active{border-color:var(--accent); color:var(--accent)}
@@ -85,7 +86,7 @@
   #texto p{margin:0 0 1em}
   #texto blockquote{
     margin:1em 0; padding:.2em 1em; border-left:2px solid var(--accent);
-    color:#333; font-style:italic;
+    color:#3a3a3a; font-style:italic;
   }
   #texto hr{border:none; border-top:1px solid var(--line); margin:2em 0}
   #texto em{font-style:italic}
@@ -103,7 +104,7 @@
     position:absolute; height:2px; border-radius:2px;
     background:var(--accent);
   }
-  body.dim #texto{ color:#5a594f; }          /* tinta al ~65%: solo color, cero reflow */
+  body.dim #texto{ color:#565656; }          /* tinta al ~65%: solo color, cero reflow */
   ::highlight(foco){
     color:#000;
     text-shadow: 0.45px 0 0 #000, -0.45px 0 0 #000;  /* engrosa trazos sin mover métricas */
@@ -112,35 +113,43 @@
     font-family:var(--mono); font-size:11px; letter-spacing:.08em;
     min-width:110px; min-height:44px; padding:8px 14px;
     border:1px solid var(--line); border-radius:2px;
-    background:#f2f0ea; color:var(--ink-dim); cursor:pointer;
+    background:var(--chip); color:var(--ink-dim); cursor:pointer;
     touch-action:manipulation;
   }
   #focusbtn.on{border-color:var(--accent); color:var(--accent)}
 
-  /* ---- progreso de lectura ---- */
-  #pbar{
-    position:fixed; top:0; left:0; height:3px; width:0%;
-    background:var(--accent); z-index:11;
+  /* ---- progreso de lectura: riel vertical, borde derecho ---- */
+  #rail{
+    position:fixed; top:0; right:0; bottom:0; width:8px; z-index:5;
+    background:rgba(0,0,0,.08);
+    border-left:1px solid rgba(0,0,0,.10);
   }
-  #pct{
-    font-size:13px; color:var(--ink-dim); letter-spacing:.06em;
-    padding:2px 8px; font-variant-numeric:tabular-nums;
+  #rail-fill{
+    position:absolute; top:0; left:0; right:0; height:0%;
+    background:var(--accent);
   }
-  #pct b{color:var(--ink); font-weight:600}
+  #rail .tick{
+    position:absolute; left:0; right:0; height:2px;
+    background:rgba(0,0,0,.28);
+  }
   @media (max-width:900px){
     #texto{width:88%; margin-left:6%}
   }
 </style>
 </head>
 <body>
-  <div id="pbar" aria-hidden="true"></div>
+  <div id="rail" aria-hidden="true">
+    <div id="rail-fill"></div>
+    <div class="tick" style="top:25%"></div>
+    <div class="tick" style="top:50%"></div>
+    <div class="tick" style="top:75%"></div>
+  </div>
   <div id="site" title="recargar">ponencia</div>
   <div id="chrome">
     <div id="clock">--:--</div>
     <div id="timer">15:00</div>
     <div id="timer-hint">tap inicia/pausa · mantener resetea</div>
     <button id="focusbtn" class="on" aria-pressed="true">focus ●</button>
-    <div id="pct"><b>0%</b> · falta 100%</div>
   </div>
   <div id="fontctl">
     <button id="f-menos" aria-label="Texto más pequeño">A−</button>
@@ -402,7 +411,7 @@ function progressPct(axisYdoc, contentTop, contentBottom){
   if (span <= 0) return 0;
   return Math.max(0, Math.min(100, Math.round(((axisYdoc - contentTop) / span) * 100)));
 }
-var elPbar = $('pbar'), elPct = $('pct');
+var elRailFill = $('rail-fill');
 function paintProgress(){
   var t = $('texto');
   var first = t.firstElementChild, last = t.lastElementChild;
@@ -411,9 +420,7 @@ function paintProgress(){
   var y = window.scrollY || window.pageYOffset || 0;
   var top = first.getBoundingClientRect().top + y;
   var bottom = last.getBoundingClientRect().bottom + y;
-  var p = progressPct(y + axis, top, bottom);
-  elPbar.style.width = p + '%';
-  elPct.innerHTML = '<b>' + p + '%</b> · falta ' + (100 - p) + '%';
+  elRailFill.style.height = progressPct(y + axis, top, bottom) + '%';
 }
 
 function setFocusBtn(){
